@@ -1,9 +1,12 @@
 import React from "react"
 import AddUser from "./components/Users/AddUser"
+import UsersList from "./components/Users/UsersList"
 function App() {
+  let users = [{name:"max",age:29}]
   return (
     <div>
         <AddUser/>
+        <UsersList users={users}/>
     </div>
       
   )
